@@ -12,8 +12,8 @@
 </script>
 
 <template>
-    <div class="h-screen bg-blue-500 flex justify-center items-center">
-        <div class="absolute mr-[20rem]">
+    <div class="h-screen w-screen bg-[url('/img/1014.jpg')] flex justify-center items-center">
+        <div class="absolute mr-[25rem]">
             <Signup />
         </div>
         <Login />
