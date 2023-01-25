@@ -23,7 +23,7 @@
 </script>
 
 <template>
-    <form @submit="onSubmit" class=" w-[20rem] flex flex-col gap-y-8">
+    <form @submit="onSubmit" class="lg:w-[20rem] flex flex-col gap-y-8">
         <div class="border-b border-slate-500 flex flex-row px-2 justify-between">
             <input 
                 class="select-none focus:outline-0 w-full"
