@@ -14,7 +14,7 @@
 <template>
     <div class="h-screen bg-blue-500 flex justify-center items-center">
         <div class="absolute left-96">
-            <Signup />
+            <!-- <Signup /> -->
         </div>
         <Login />
     </div>
