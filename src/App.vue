@@ -13,8 +13,8 @@
 
 <template>
     <div class="h-screen bg-blue-500 flex justify-center items-center">
-        <div class="absolute left-96">
-            <!-- <Signup /> -->
+        <div class="absolute mr-[20rem]">
+            <Signup />
         </div>
         <Login />
     </div>
