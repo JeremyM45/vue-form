@@ -14,6 +14,9 @@
                 alert(
                     'name: ' + this.name + "\n" + 'supervisor: ' + this.supervisor + "\n" + 'email: ' + this.email
                 )
+                this.name = ''
+                this.supervisor = ''
+                this.email = ''
             }
         }
     }
