@@ -1,19 +1,34 @@
 <script>
     export default {
         name: "SignupForm",
-
+        data(){
+            return {
+                name: '',
+                supervisor: '',
+                email: ''
+            }
+        },
+        methods: {
+            onSubmit(e){
+                e.preventDefault()
+                alert(
+                    'name: ' + this.name + "\n" + 'supervisor: ' + this.supervisor + "\n" + 'email: ' + this.email
+                )
+            }
+        }
     }
 </script>
 
 <template>
-    <form class="w-full">
+    <form @submit="onSubmit" class="w-full">
         <div class="border-b border-slate-500 flex flex-row px-2 justify-between">
             <input 
                 class="select-none focus:outline-0 w-full"
                 type="text"
                 name="name"
                 placeholder="YOUR NAME"
-                
+                required
+                v-model="name"
             ><i class="fa-sharp fa-solid fa-user text-slate-500 pt-1"></i>
         </div>
         <div class="border-b border-slate-500 flex flex-row px-2 justify-between">
@@ -22,6 +37,8 @@
                 type="text"
                 name="supervisor"
                 placeholder="SUPERVISOR'S NAME"
+                required
+                v-model="supervisor"
             />
             <i class="fa-solid fa-briefcase text-slate-500 pt-1"></i>
         </div>
@@ -31,6 +48,8 @@
                 type="email"
                 name="email"
                 placeholder="YOUR EMAIL"
+                required
+                v-model="email"
             />
             <i class="fa-solid fa-envelope text-slate-500 pt-1"></i>
         </div>
