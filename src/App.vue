@@ -1,9 +1,16 @@
-<script setup>
+<script>
+    import Login from './components/Login.vue';
 
+    export default {
+        name: "App",
+        components: {
+            Login,
+        }
+    }
 </script>
 
 <template>
-    <h1 class="text-3xl text-center text-red-500 font-bold underline">
-        Hello Vue with Tailwind!
-    </h1>
+    <div class="h-screen bg-blue-500 flex justify-center items-center">
+        <Login />
+    </div>
 </template>
